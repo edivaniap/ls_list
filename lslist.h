@@ -135,11 +135,22 @@ namespace ls         // linear sequence
     class list 
     {
     private:
-        struct Node { /*See Code 2*/ };
+        struct Node 
+        { 
+             typedef T value_type; // using value_type = T;             
+             value_type data; // Tipo de informação a ser armazenada no container.             
+             Node * next;             
+             Node * prev;             
+             Node( const T & d_= T() , Node * n_ = nullptr, Node * p_ = nullptr )                 
+                : data ( d_ )                 
+                , next ( n_ )                 
+                , prev ( p_ )             
+            { /* empty */ }
+        };
         
     public:
-        class const_iterator { /*See Code 3*/ };
-        class iterator : public const_iterator { /*See Code 3*/ };
+        using iterator = MyBidirectionalIterator< Node >;             
+        using const_iterator = MyBidirectionalIterator< const Node >;
         
         list( void );
         ~list( void );
