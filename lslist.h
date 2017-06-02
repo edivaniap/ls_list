@@ -74,9 +74,7 @@ namespace ls         // linear sequence
                 // =============================================================
             public:
                 // Constructor
-                MyBidirectionalIterator( T * ptr_ = nullptr )
-                    : m_ptr ( ptr_ )
-                { /* empty */ }
+                MyBidirectionalIterator( T * ptr_ = nullptr );
 
                 // Special methods. Default versions.
                 ~MyBidirectionalIterator() = default;
@@ -176,7 +174,7 @@ namespace ls         // linear sequence
         const_iterator find( const T & value ) const;
     
     private:
-        int m_size;
+        int   m_size;
         Node *m_head;
         Node *m_tail;
     };
