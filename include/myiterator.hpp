@@ -1,5 +1,7 @@
 /**
-* @file myiterator.h
+* @file myiterator.hpp
+* @version 1.0  
+* @title MyIterator
 * @brief Classe para iterator que será usado na lista
 * @author Selan R. Santos (Algumas alterações: Edivânia)
 * @date 03/06/2017

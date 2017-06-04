@@ -1,11 +1,14 @@
 # Introduction
 
+This project implements a **list** Abstract Data Type (ADT) based on a doubly linked list.
 
 # Done
 
 - list( void );
 - ~list( void );
 - list( const list & );
+- list( InputIt first, InputIt last );
+- list( std::initializer_list<T> ilist )
 - int size( void ) const; 
 - bool empty( void ) const; 
 - void clear( void ); 
@@ -23,20 +26,32 @@
 - const_iterator cbegin( void ) const; 
 - iterator end( void ); 
 - const_iterator cend( void ) const; 
-- template <class InItr >
 - void assign( InItr first, InItr last ); 
+
 
 # To do
 
 - list( list<T> && );
 - list & operator= ( const list<T> & );
 - list & operator= ( list<T> && );
+- explicit list( size_t count )
 - iterator insert( const_iterator itr, const T & value );
 - iterator insert( const_iterator pos, std::initializer_list<T> ilist );
 - iterator erase( const_iterator itr );
 - iterator erase( const_iterator first, const_iterator last );
 - const_iterator find( const T & value ) const;
 
+# Archives
+.
+├── bin
+│   └── drive
+├── include
+│   ├── list.hpp
+│   └── myiterator.hpp
+├── projeto_ED_list.pdf
+├── README.md
+└── src
+    └── drive_list.cpp
 		
 # How to build
 
