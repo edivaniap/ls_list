@@ -42,16 +42,55 @@ This project implements a **list** Abstract Data Type (ADT) based on a doubly li
 - const_iterator find( const T & value ) const;
 
 # Archives
+
 .
+
 ├── bin
+
 │   └── drive
+
 ├── include
+
 │   ├── list.hpp
+
 │   └── myiterator.hpp
+
 ├── projeto_ED_list.pdf
+
 ├── README.md
+
 └── src
+
     └── drive_list.cpp
+
+.
+
+├── bin
+
+│   └── drive
+
+├── documentation
+
+│   ├── Doxyfile
+
+│   ├── html
+
+│   └── latex 
+
+├── include
+
+│   ├── list.hpp
+
+│   └── myiterator.hpp
+
+├── projeto_ED_list.pdf
+
+├── README.md
+
+└── src
+
+    └── drive_list.cpp
+
 		
 # How to build
 

@@ -1,0 +1,154 @@
+\hypertarget{classls_1_1MyBidirectionalIterator}{}\section{ls\+:\+:My\+Bidirectional\+Iterator$<$ T $>$ Class Template Reference}
+\label{classls_1_1MyBidirectionalIterator}\index{ls\+::\+My\+Bidirectional\+Iterator$<$ T $>$@{ls\+::\+My\+Bidirectional\+Iterator$<$ T $>$}}
+
+
+{\ttfamily \#include $<$myiterator.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using {\bfseries self\+\_\+type} = \hyperlink{classls_1_1MyBidirectionalIterator}{My\+Bidirectional\+Iterator}\hypertarget{classls_1_1MyBidirectionalIterator_af766bc76128ad6d37de8921c0b140c63}{}\label{classls_1_1MyBidirectionalIterator_af766bc76128ad6d37de8921c0b140c63}
+
+\item 
+using {\bfseries value\+\_\+type} = T\hypertarget{classls_1_1MyBidirectionalIterator_ae4847cb2af2add0257e1a6dd91673c7d}{}\label{classls_1_1MyBidirectionalIterator_ae4847cb2af2add0257e1a6dd91673c7d}
+
+\item 
+using {\bfseries pointer} = T $\ast$\hypertarget{classls_1_1MyBidirectionalIterator_ab47ef144191f530f40a19532ad841b89}{}\label{classls_1_1MyBidirectionalIterator_ab47ef144191f530f40a19532ad841b89}
+
+\item 
+using {\bfseries reference} = T \&\hypertarget{classls_1_1MyBidirectionalIterator_ad1523807f2195de11dab514ffb394b88}{}\label{classls_1_1MyBidirectionalIterator_ad1523807f2195de11dab514ffb394b88}
+
+\item 
+using \hyperlink{classls_1_1MyBidirectionalIterator_a4f1b64a39dc7c11d9259354d1a5753ee}{difference\+\_\+type} = std\+::ptrdiff\+\_\+t
+\begin{DoxyCompactList}\small\item\em std\+::ptrdiff\+\_\+t is the signed integer type of the result of subtracting two pointers. \end{DoxyCompactList}\item 
+using \hyperlink{classls_1_1MyBidirectionalIterator_aac72a0b8efee1d61f3382e6ca35444d5}{iterator\+\_\+category} = std\+::bidirectional\+\_\+iterator\+\_\+tag
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries My\+Bidirectional\+Iterator} (T $\ast$ptr\+\_\+=nullptr)\hypertarget{classls_1_1MyBidirectionalIterator_aa86faf12d6094258ade30ef662d00fa0}{}\label{classls_1_1MyBidirectionalIterator_aa86faf12d6094258ade30ef662d00fa0}
+
+\item 
+{\bfseries My\+Bidirectional\+Iterator} (const \hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \&)=default\hypertarget{classls_1_1MyBidirectionalIterator_ad49837e80546f9668e1fd57829542759}{}\label{classls_1_1MyBidirectionalIterator_ad49837e80546f9668e1fd57829542759}
+
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \& {\bfseries operator=} (const \hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \&)=default\hypertarget{classls_1_1MyBidirectionalIterator_a32070468a19eab37669cb2151d78bb86}{}\label{classls_1_1MyBidirectionalIterator_a32070468a19eab37669cb2151d78bb86}
+
+\item 
+const T\+::value\+\_\+type \& \hyperlink{classls_1_1MyBidirectionalIterator_a69381f58aabbfb7d497da0c6db62a521}{operator$\ast$} () const 
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \hyperlink{classls_1_1MyBidirectionalIterator_aad3dac93bddbfa64971868f5fe4c4977}{operator++} ()
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \hyperlink{classls_1_1MyBidirectionalIterator_a8696b0ae974230040ef6dbec354caa34}{operator++} (int)
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \hyperlink{classls_1_1MyBidirectionalIterator_a7c3b5a5f8857ffb8741688591f4d5c29}{operator-\/-\/} ()
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \hyperlink{classls_1_1MyBidirectionalIterator_ad3dc0186d4c464a557ae9ccf5ca377c6}{operator-\/-\/} (int)
+\item 
+bool \hyperlink{classls_1_1MyBidirectionalIterator_a792c43d0fac351ee21bf6b4ab6f27594}{operator==} (const \hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \&rhs\+\_\+) const \hypertarget{classls_1_1MyBidirectionalIterator_a792c43d0fac351ee21bf6b4ab6f27594}{}\label{classls_1_1MyBidirectionalIterator_a792c43d0fac351ee21bf6b4ab6f27594}
+
+\begin{DoxyCompactList}\small\item\em The it == it2 operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classls_1_1MyBidirectionalIterator_ab2941a09af64ee4f768d18024e3e3697}{operator!=} (const \hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \&rhs\+\_\+) const \hypertarget{classls_1_1MyBidirectionalIterator_ab2941a09af64ee4f768d18024e3e3697}{}\label{classls_1_1MyBidirectionalIterator_ab2941a09af64ee4f768d18024e3e3697}
+
+\begin{DoxyCompactList}\small\item\em The it != it2 operator. \end{DoxyCompactList}\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \hyperlink{classls_1_1MyBidirectionalIterator_a24a376170fbcc2da7c109594ad3f7a06}{operator+=} (\hyperlink{classls_1_1MyBidirectionalIterator_a4f1b64a39dc7c11d9259354d1a5753ee}{difference\+\_\+type} step\+\_\+)\hypertarget{classls_1_1MyBidirectionalIterator_a24a376170fbcc2da7c109594ad3f7a06}{}\label{classls_1_1MyBidirectionalIterator_a24a376170fbcc2da7c109594ad3f7a06}
+
+\begin{DoxyCompactList}\small\item\em it += 3; // Go back 3 positions within the container. \end{DoxyCompactList}\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{self\+\_\+type} \hyperlink{classls_1_1MyBidirectionalIterator_a0b586a8d90d6b47851f0f204334e853d}{operator-\/=} (\hyperlink{classls_1_1MyBidirectionalIterator_a4f1b64a39dc7c11d9259354d1a5753ee}{difference\+\_\+type} step\+\_\+)\hypertarget{classls_1_1MyBidirectionalIterator_a0b586a8d90d6b47851f0f204334e853d}{}\label{classls_1_1MyBidirectionalIterator_a0b586a8d90d6b47851f0f204334e853d}
+
+\begin{DoxyCompactList}\small\item\em it -\/= 3; // Go back 3 positions within the container. \end{DoxyCompactList}\item 
+pointer \hyperlink{classls_1_1MyBidirectionalIterator_ad6c65c34d85e37c9f99ddf9d2a06a060}{operator-\/$>$} (void) const \hypertarget{classls_1_1MyBidirectionalIterator_ad6c65c34d85e37c9f99ddf9d2a06a060}{}\label{classls_1_1MyBidirectionalIterator_ad6c65c34d85e37c9f99ddf9d2a06a060}
+
+\begin{DoxyCompactList}\small\item\em it-\/$>$method() \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class ls\+::\+My\+Bidirectional\+Iterator$<$ T $>$}
+
+A template class representing a biderectional iterator defines over a dynamic array.
+
+\begin{DoxyNote}{Note}
+This iterator only works for traversing elements inside the same array.
+\end{DoxyNote}
+This class is incomplete and it is provided \char`\"{}as is\char`\"{}.
+
+\begin{DoxyDate}{Date}
+May, 2nd 2017. 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Selan R. dos Santos 
+\end{DoxyAuthor}
+
+
+\subsection{Member Typedef Documentation}
+\index{ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}}
+\subsubsection[{\texorpdfstring{difference\+\_\+type}{difference_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ using {\bf ls\+::\+My\+Bidirectional\+Iterator}$<$ T $>$\+::{\bf difference\+\_\+type} =  std\+::ptrdiff\+\_\+t}\hypertarget{classls_1_1MyBidirectionalIterator_a4f1b64a39dc7c11d9259354d1a5753ee}{}\label{classls_1_1MyBidirectionalIterator_a4f1b64a39dc7c11d9259354d1a5753ee}
+
+
+std\+::ptrdiff\+\_\+t is the signed integer type of the result of subtracting two pointers. 
+
+std\+::ptrdiff\+\_\+t is used for pointer arithmetic and array indexing, if negative values are possible. Programs that use other types, such as int, {\bfseries may fail} on, e.\+g. 64-\/bit systems when the index exceeds I\+N\+T\+\_\+\+M\+AX or if it relies on 32-\/bit modular arithmetic.
+
+When working with the C++ container library, the proper type for the difference between iterators is the member typedef difference\+\_\+type, which is often synonymous with std\+::ptrdiff\+\_\+t. Only pointers to elements of the same array (including the pointer one past the end of the array) may be subtracted from each other. \index{ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}}
+\subsubsection[{\texorpdfstring{iterator\+\_\+category}{iterator_category}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ using {\bf ls\+::\+My\+Bidirectional\+Iterator}$<$ T $>$\+::{\bf iterator\+\_\+category} =  std\+::bidirectional\+\_\+iterator\+\_\+tag}\hypertarget{classls_1_1MyBidirectionalIterator_aac72a0b8efee1d61f3382e6ca35444d5}{}\label{classls_1_1MyBidirectionalIterator_aac72a0b8efee1d61f3382e6ca35444d5}
+Defines the category of an iterator. Iterator category tags carry information that can be used to select the most efficient algorithms for the specific requirement set that is implied by the category. 
+
+\subsection{Member Function Documentation}
+\index{ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}}
+\subsubsection[{\texorpdfstring{operator$\ast$() const }{operator*() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T\+::value\+\_\+type\& {\bf ls\+::\+My\+Bidirectional\+Iterator}$<$ T $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1MyBidirectionalIterator_a69381f58aabbfb7d497da0c6db62a521}{}\label{classls_1_1MyBidirectionalIterator_a69381f58aabbfb7d497da0c6db62a521}
+The $\ast$it operator. Supports\+: $\ast$it = X\+X\+XX or X\+X\+XX = $\ast$it. \begin{DoxyReturn}{Returns}
+A reference to the object this iterator points to. 
+\end{DoxyReturn}
+\index{ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}}
+\subsubsection[{\texorpdfstring{operator++()}{operator++()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf self\+\_\+type} {\bf ls\+::\+My\+Bidirectional\+Iterator}$<$ T $>$\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1MyBidirectionalIterator_aad3dac93bddbfa64971868f5fe4c4977}{}\label{classls_1_1MyBidirectionalIterator_aad3dac93bddbfa64971868f5fe4c4977}
+The ++it operator. \begin{DoxyReturn}{Returns}
+The calling object. 
+\end{DoxyReturn}
+\index{ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}}
+\subsubsection[{\texorpdfstring{operator++(int)}{operator++(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf self\+\_\+type} {\bf ls\+::\+My\+Bidirectional\+Iterator}$<$ T $>$\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1MyBidirectionalIterator_a8696b0ae974230040ef6dbec354caa34}{}\label{classls_1_1MyBidirectionalIterator_a8696b0ae974230040ef6dbec354caa34}
+The it++ operator. \begin{DoxyReturn}{Returns}
+The calling object. 
+\end{DoxyReturn}
+\index{ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}}
+\subsubsection[{\texorpdfstring{operator-\/-\/()}{operator--()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf self\+\_\+type} {\bf ls\+::\+My\+Bidirectional\+Iterator}$<$ T $>$\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1MyBidirectionalIterator_a7c3b5a5f8857ffb8741688591f4d5c29}{}\label{classls_1_1MyBidirectionalIterator_a7c3b5a5f8857ffb8741688591f4d5c29}
+The --it operator. \begin{DoxyReturn}{Returns}
+The calling object. 
+\end{DoxyReturn}
+\index{ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!ls\+::\+My\+Bidirectional\+Iterator@{ls\+::\+My\+Bidirectional\+Iterator}}
+\subsubsection[{\texorpdfstring{operator-\/-\/(int)}{operator--(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf self\+\_\+type} {\bf ls\+::\+My\+Bidirectional\+Iterator}$<$ T $>$\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1MyBidirectionalIterator_ad3dc0186d4c464a557ae9ccf5ca377c6}{}\label{classls_1_1MyBidirectionalIterator_ad3dc0186d4c464a557ae9ccf5ca377c6}
+The it-- operator. \begin{DoxyReturn}{Returns}
+The calling object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{myiterator_8hpp}{myiterator.\+hpp}\end{DoxyCompactItemize}

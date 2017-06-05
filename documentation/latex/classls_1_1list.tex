@@ -1,0 +1,285 @@
+\hypertarget{classls_1_1list}{}\section{ls\+:\+:list$<$ T $>$ Class Template Reference}
+\label{classls_1_1list}\index{ls\+::list$<$ T $>$@{ls\+::list$<$ T $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using {\bfseries iterator} = \hyperlink{classls_1_1MyBidirectionalIterator}{My\+Bidirectional\+Iterator}$<$ node\+\_\+t $>$\hypertarget{classls_1_1list_ae4aff2852ad6f2238e8b31d11ab0f574}{}\label{classls_1_1list_ae4aff2852ad6f2238e8b31d11ab0f574}
+
+\item 
+using {\bfseries const\+\_\+iterator} = \hyperlink{classls_1_1MyBidirectionalIterator}{My\+Bidirectional\+Iterator}$<$ const node\+\_\+t $>$\hypertarget{classls_1_1list_a46ba9d85a9148970316c2d57e6c21927}{}\label{classls_1_1list_a46ba9d85a9148970316c2d57e6c21927}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classls_1_1list_a3717713cf5e4558e543b533d14eef424}{list} ()\hypertarget{classls_1_1list_a3717713cf5e4558e543b533d14eef424}{}\label{classls_1_1list_a3717713cf5e4558e543b533d14eef424}
+
+\begin{DoxyCompactList}\small\item\em Default constructor that creates an empty list. \end{DoxyCompactList}\item 
+\hyperlink{classls_1_1list_a20900981ea1cc1a4851f0078a2fd1bfd}{list} (const \hyperlink{classls_1_1list}{list} \&clone\+\_\+)
+\begin{DoxyCompactList}\small\item\em Copy constructor. Constructs the list with the deep copy of the contents of clone\+\_\+. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Input\+It $>$ }\\\hyperlink{classls_1_1list_a783b17259b4ac0805c58d6a959d3c11f}{list} (Input\+It first, Input\+It last)
+\begin{DoxyCompactList}\small\item\em Constructs the list with the contents of the range \mbox{[}first, last) \end{DoxyCompactList}\item 
+\hyperlink{classls_1_1list_ac4d5e3102e51f80bcc82fdab0b8d187f}{list} (std\+::initializer\+\_\+list$<$ T $>$ ilist)
+\begin{DoxyCompactList}\small\item\em Constructs the list with the contents of the initializer list ilist. \end{DoxyCompactList}\item 
+\hyperlink{classls_1_1list_ab341963c62740c4e4d1a042fdba9c856}{$\sim$list} ()\hypertarget{classls_1_1list_ab341963c62740c4e4d1a042fdba9c856}{}\label{classls_1_1list_ab341963c62740c4e4d1a042fdba9c856}
+
+\begin{DoxyCompactList}\small\item\em Destructs the list. The destructors of the elements are called and the used storage is deallocated. \end{DoxyCompactList}\item 
+void \hyperlink{classls_1_1list_a28315f48ca173954648dd8b8ccf04124}{clear} (void)\hypertarget{classls_1_1list_a28315f48ca173954648dd8b8ccf04124}{}\label{classls_1_1list_a28315f48ca173954648dd8b8ccf04124}
+
+\begin{DoxyCompactList}\small\item\em Remove (either logically or physically) all elements from the container. \end{DoxyCompactList}\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{iterator} {\bfseries begin} ()\hypertarget{classls_1_1list_a73458e8145cc3ee958fb59940084ab61}{}\label{classls_1_1list_a73458e8145cc3ee958fb59940084ab61}
+
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{const\+\_\+iterator} {\bfseries cbegin} (void) const \hypertarget{classls_1_1list_aa5b9875385cfe9f72987147eb08ec4df}{}\label{classls_1_1list_aa5b9875385cfe9f72987147eb08ec4df}
+
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{iterator} {\bfseries end} ()\hypertarget{classls_1_1list_a23e842f652b4da5c445499dc81e67934}{}\label{classls_1_1list_a23e842f652b4da5c445499dc81e67934}
+
+\item 
+\hyperlink{classls_1_1MyBidirectionalIterator}{const\+\_\+iterator} {\bfseries cend} (void) const \hypertarget{classls_1_1list_a7d7c77c477cbadf86b4715fd185adfa8}{}\label{classls_1_1list_a7d7c77c477cbadf86b4715fd185adfa8}
+
+\item 
+size\+\_\+t \hyperlink{classls_1_1list_aa020ac837da9a86c1ee2562d868e3629}{size} (void) const 
+\begin{DoxyCompactList}\small\item\em Informs the list size. \end{DoxyCompactList}\item 
+bool \hyperlink{classls_1_1list_ac31acbc03e3b98a84211d76d20ec852b}{empty} (void) const 
+\begin{DoxyCompactList}\small\item\em Verifies if the list is empty. \end{DoxyCompactList}\item 
+T \& \hyperlink{classls_1_1list_a000b6c878e0ae734f7435c5a1acdc81f}{back} (void)
+\item 
+T \& \hyperlink{classls_1_1list_a157989423526cfa7550d1c067c8b03cb}{front} (void)
+\item 
+const T \& \hyperlink{classls_1_1list_a7d9de24b69f164f02cb0f559a6f4f7ac}{back} (void) const 
+\item 
+const T \& \hyperlink{classls_1_1list_a2ac5867e19e0ae516d68e57b2c8ed698}{front} (void) const 
+\item 
+void \hyperlink{classls_1_1list_a21438e1be5b2143896ee8480cb2beb18}{push\+\_\+back} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Adds value to the end of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classls_1_1list_a3ae27bac754d4ca95da34c9040f33d48}{push\+\_\+front} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Adds value to the begin of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classls_1_1list_a22874075ed4344dc66f881a18704d8f2}{pop\+\_\+front} (void)\hypertarget{classls_1_1list_a22874075ed4344dc66f881a18704d8f2}{}\label{classls_1_1list_a22874075ed4344dc66f881a18704d8f2}
+
+\begin{DoxyCompactList}\small\item\em Removes the object at the begin of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classls_1_1list_a412e79242cc2ad3d49fc35b55e611ce2}{pop\+\_\+back} (void)\hypertarget{classls_1_1list_a412e79242cc2ad3d49fc35b55e611ce2}{}\label{classls_1_1list_a412e79242cc2ad3d49fc35b55e611ce2}
+
+\begin{DoxyCompactList}\small\item\em Removes the object at the end of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classls_1_1list_aef14276ef9726f7ed30dbe9a76f4035f}{assign} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Replaces the content of the list with copies of value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class In\+Itr $>$ }\\void \hyperlink{classls_1_1list_a8528bc556cc62982161cd369e65ad3b7}{assign} (In\+Itr first, In\+Itr last)
+\begin{DoxyCompactList}\small\item\em Replaces all the list with content of the range. \end{DoxyCompactList}\item 
+void \hyperlink{classls_1_1list_a3a502e5df12f088f6fda2edb5f79cfef}{assign} (std\+::initializer\+\_\+list$<$ T $>$ ilist)
+\begin{DoxyCompactList}\small\item\em Replaces all the list with content initializer list. \end{DoxyCompactList}\item 
+void \hyperlink{classls_1_1list_ab060b909692905797fd28444f871bc44}{print} () const \hypertarget{classls_1_1list_ab060b909692905797fd28444f871bc44}{}\label{classls_1_1list_ab060b909692905797fd28444f871bc44}
+
+\begin{DoxyCompactList}\small\item\em Prints the list and your length and capacity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ls\+::list@{ls\+::list}!list@{list}}
+\index{list@{list}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{list(const list \&clone\+\_\+)}{list(const list &clone_)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf ls\+::list}$<$ T $>$\+::{\bf list} (
+\begin{DoxyParamCaption}
+\item[{const {\bf list}$<$ T $>$ \&}]{clone\+\_\+}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a20900981ea1cc1a4851f0078a2fd1bfd}{}\label{classls_1_1list_a20900981ea1cc1a4851f0078a2fd1bfd}
+
+
+Copy constructor. Constructs the list with the deep copy of the contents of clone\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clone\+\_\+} & List that will be copied \\
+\hline
+\end{DoxyParams}
+\index{ls\+::list@{ls\+::list}!list@{list}}
+\index{list@{list}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{list(\+Input\+It first, Input\+It last)}{list(InputIt first, InputIt last)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template$<$typename Input\+It $>$ {\bf ls\+::list}$<$ T $>$\+::{\bf list} (
+\begin{DoxyParamCaption}
+\item[{Input\+It}]{first, }
+\item[{Input\+It}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a783b17259b4ac0805c58d6a959d3c11f}{}\label{classls_1_1list_a783b17259b4ac0805c58d6a959d3c11f}
+
+
+Constructs the list with the contents of the range \mbox{[}first, last) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Points to the first element of the range \\
+\hline
+{\em last} & Points to tthe end mark of the range \\
+\hline
+\end{DoxyParams}
+\index{ls\+::list@{ls\+::list}!list@{list}}
+\index{list@{list}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{list(std\+::initializer\+\_\+list$<$ T $>$ ilist)}{list(std::initializer_list< T > ilist)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf ls\+::list}$<$ T $>$\+::{\bf list} (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ T $>$}]{ilist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_ac4d5e3102e51f80bcc82fdab0b8d187f}{}\label{classls_1_1list_ac4d5e3102e51f80bcc82fdab0b8d187f}
+
+
+Constructs the list with the contents of the initializer list ilist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ilist} & An initializer list \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ls\+::list@{ls\+::list}!assign@{assign}}
+\index{assign@{assign}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{assign(const T \&value)}{assign(const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf ls\+::list}$<$ T $>$\+::assign (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_aef14276ef9726f7ed30dbe9a76f4035f}{}\label{classls_1_1list_aef14276ef9726f7ed30dbe9a76f4035f}
+
+
+Replaces the content of the list with copies of value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to copy \\
+\hline
+\end{DoxyParams}
+\index{ls\+::list@{ls\+::list}!assign@{assign}}
+\index{assign@{assign}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{assign(\+In\+Itr first, In\+Itr last)}{assign(InItr first, InItr last)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template$<$class In\+Itr $>$ void {\bf ls\+::list}$<$ T $>$\+::assign (
+\begin{DoxyParamCaption}
+\item[{In\+Itr}]{first, }
+\item[{In\+Itr}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a8528bc556cc62982161cd369e65ad3b7}{}\label{classls_1_1list_a8528bc556cc62982161cd369e65ad3b7}
+
+
+Replaces all the list with content of the range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Begin of range \\
+\hline
+{\em last} & End of range \\
+\hline
+\end{DoxyParams}
+\index{ls\+::list@{ls\+::list}!assign@{assign}}
+\index{assign@{assign}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{assign(std\+::initializer\+\_\+list$<$ T $>$ ilist)}{assign(std::initializer_list< T > ilist)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf ls\+::list}$<$ T $>$\+::assign (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ T $>$}]{ilist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a3a502e5df12f088f6fda2edb5f79cfef}{}\label{classls_1_1list_a3a502e5df12f088f6fda2edb5f79cfef}
+
+
+Replaces all the list with content initializer list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ilist} & An initializer list \\
+\hline
+\end{DoxyParams}
+\index{ls\+::list@{ls\+::list}!back@{back}}
+\index{back@{back}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{back(void)}{back(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T\& {\bf ls\+::list}$<$ T $>$\+::back (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a000b6c878e0ae734f7435c5a1acdc81f}{}\label{classls_1_1list_a000b6c878e0ae734f7435c5a1acdc81f}
+\begin{DoxyReturn}{Returns}
+The object at the end of the list 
+\end{DoxyReturn}
+\index{ls\+::list@{ls\+::list}!back@{back}}
+\index{back@{back}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{back(void) const }{back(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T\& {\bf ls\+::list}$<$ T $>$\+::back (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a7d9de24b69f164f02cb0f559a6f4f7ac}{}\label{classls_1_1list_a7d9de24b69f164f02cb0f559a6f4f7ac}
+\begin{DoxyReturn}{Returns}
+The constant object at the end of the list 
+\end{DoxyReturn}
+\index{ls\+::list@{ls\+::list}!empty@{empty}}
+\index{empty@{empty}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{empty(void) const }{empty(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf ls\+::list}$<$ T $>$\+::empty (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_ac31acbc03e3b98a84211d76d20ec852b}{}\label{classls_1_1list_ac31acbc03e3b98a84211d76d20ec852b}
+
+
+Verifies if the list is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the container contains no elements, and false otherwise 
+\end{DoxyReturn}
+\index{ls\+::list@{ls\+::list}!front@{front}}
+\index{front@{front}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{front(void)}{front(void)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T\& {\bf ls\+::list}$<$ T $>$\+::front (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a157989423526cfa7550d1c067c8b03cb}{}\label{classls_1_1list_a157989423526cfa7550d1c067c8b03cb}
+\begin{DoxyReturn}{Returns}
+The object at the beginning of the list 
+\end{DoxyReturn}
+\index{ls\+::list@{ls\+::list}!front@{front}}
+\index{front@{front}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{front(void) const }{front(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T\& {\bf ls\+::list}$<$ T $>$\+::front (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a2ac5867e19e0ae516d68e57b2c8ed698}{}\label{classls_1_1list_a2ac5867e19e0ae516d68e57b2c8ed698}
+\begin{DoxyReturn}{Returns}
+The constant object at the beginning of the list 
+\end{DoxyReturn}
+\index{ls\+::list@{ls\+::list}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const T \&value)}{push_back(const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf ls\+::list}$<$ T $>$\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a21438e1be5b2143896ee8480cb2beb18}{}\label{classls_1_1list_a21438e1be5b2143896ee8480cb2beb18}
+
+
+Adds value to the end of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add \\
+\hline
+\end{DoxyParams}
+\index{ls\+::list@{ls\+::list}!push\+\_\+front@{push\+\_\+front}}
+\index{push\+\_\+front@{push\+\_\+front}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{push\+\_\+front(const T \&value)}{push_front(const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf ls\+::list}$<$ T $>$\+::push\+\_\+front (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_a3ae27bac754d4ca95da34c9040f33d48}{}\label{classls_1_1list_a3ae27bac754d4ca95da34c9040f33d48}
+
+
+Adds value to the begin of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add \\
+\hline
+\end{DoxyParams}
+\index{ls\+::list@{ls\+::list}!size@{size}}
+\index{size@{size}!ls\+::list@{ls\+::list}}
+\subsubsection[{\texorpdfstring{size(void) const }{size(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ size\+\_\+t {\bf ls\+::list}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classls_1_1list_aa020ac837da9a86c1ee2562d868e3629}{}\label{classls_1_1list_aa020ac837da9a86c1ee2562d868e3629}
+
+
+Informs the list size. 
+
+\begin{DoxyReturn}{Returns}
+Number of elements in the container 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{list_8hpp}{list.\+hpp}\end{DoxyCompactItemize}

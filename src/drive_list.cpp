@@ -93,6 +93,9 @@ int main( void )
     L3.print();
     std::cout << "front: " << L3.front() << "\n";
     std::cout << "back: " << L3.back() << "\n";
+    assert( L3.size() == L1.size() );
+    assert( L3.front() == L1.front() );
+    assert( L3.back() == L1.back() );
 
 
     //--------------- TESTE 7 not working
@@ -117,6 +120,8 @@ int main( void )
     assert( L5.size() == 3 );
     assert( L5.back() == 1.1f );
     assert( L5.front() == 7.5f );
+
+    std::cout << "\n\n>>> Passou nos testes feitos...\n";
 
     return 0;
 }

@@ -26,7 +26,6 @@ namespace ls         // linear sequence
     private:
         struct node_t
         {
-
             typedef T value_type;
 
             value_type data; //<! Data field
