@@ -69,7 +69,7 @@ This project implements a **list** Abstract Data Type (ADT) based on a doubly li
 # Git repository
 
 [**projetos.imd.ufrn.br/edivaniap/ls_list**](http://projetos.imd.ufrn.br/edivaniap/ls_list)  
-[**github.com/vaniati/ls_lis**](https://github.com/vaniati/ls_lis)
+[**github.com/vaniati/ls_list**](https://github.com/vaniati/ls_list)
 
 # Authorship
 
